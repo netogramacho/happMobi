@@ -1,0 +1,40 @@
+.header {
+  width: 100vw;
+  height: 40vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #202e3d;
+
+  &__image {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #c61d35;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  h3 {
+    margin-top: 10px;
+    color: #ffffff;
+  }
+}
+
+.body {
+  height: 50vh;
+  position: relative;
+}
+
+.footer {
+  height: 90px;
+  position: relative;
+}
