@@ -1,0 +1,50 @@
+.login {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #1d2b3a;
+
+  .header {
+    height: 45vh;
+  }
+
+  .content {
+    height: 45vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .inputs {
+      display: flex;
+      flex-direction: column;
+
+      * {
+        margin-bottom: 10px;
+      }
+
+      a {
+        margin-left: 10px;
+        font-size: 18px;
+        color: #FFFFFF;
+        text-decoration: underline;
+      }
+    }
+
+    .button {
+      margin-top: 20px;
+    }
+  }
+
+  .footer {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+
+    a {
+      margin-left: 10px;
+      font-size: 18px;
+      color: #FFFFFF;
+      text-decoration: underline;
+    }
+  }
+}
