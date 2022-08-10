@@ -1,0 +1,91 @@
+.filters {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  .header {
+    width: 100vw;
+    height: 20vh;
+    background-color: #202e3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      color: #ffffff;
+      font-size: 20px;
+    }
+    img {
+      width: 20px;
+      margin-right: 5px;
+    }
+  }
+
+  .body {
+    width: 100vw;
+    height: 70vh;
+    background-color: #f8f6f6;
+
+    &__title {
+      height: 50px;
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+
+      h3 {
+        flex: 1;
+      }
+    }
+
+    .checkCarroceria {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #ffffff;
+      padding: 15px 0;
+
+      > div {
+        width: 40%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 12px;
+      }
+    }
+
+    .checkMotor {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #ffffff;
+      padding: 15px 40px;
+
+      > div {
+        width: 30%;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .checkLugar {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #ffffff;
+      padding: 15px 40px;
+
+      > div {
+        width: 45px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .footer {
+    width: 100vw;
+    height: 10vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 3px 3px #202e3d22;
+  }
+}

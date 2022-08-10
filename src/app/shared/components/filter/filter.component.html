@@ -1,0 +1,50 @@
+<div [style]="'display:' + display" class="filters">
+  <div class="header">
+    <p>
+      <img src="assets/images/search-icon.png" /> BUSCA
+    </p>
+  </div>
+  <div class="body">
+    <div class="card-filter">
+      <div class="body__title">
+        <h3>Tipos de carrocerias</h3>
+        <span>V</span>
+      </div>
+      <div class="checkCarroceria">
+        <div *ngFor="let carroceria of carrocerias">
+          <app-check-carroceria (checkValue)="updateCarrocerias($event)" [carroceria]="carroceria"></app-check-carroceria>
+        </div>
+      </div>
+    </div>
+    <div class="card-filter">
+      <div class="body__title">
+        <h3>Tipos de motores</h3>
+        <span>V</span>
+      </div>
+      <div class="checkMotor">
+        <div *ngFor="let motor of motores">
+          <app-check-motor (checkValue)="updateMotores($event)" [motor]="motor"></app-check-motor>
+        </div>
+      </div>
+    </div>
+    <div class="card-filter">
+      <div class="body__title">
+        <h3>Quantidade de lugares</h3>
+        <span>V</span>
+      </div>
+      <div class="checkLugar">
+        <div *ngFor="let lugar of lugares">
+          <app-check-lugares (checkValue)="updateLugar($event)" [lugar]="lugar"></app-check-lugares>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer">
+    <app-button
+      [color]="'#1b2c39'"
+      [contentBold]="'APLICAR FILTROS'"
+      (click)="aplicarFiltros()"
+    ></app-button>
+  </div>
+</div>

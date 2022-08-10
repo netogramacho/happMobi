@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -9,6 +10,10 @@ import { MenuOptionComponent } from './components/menu-option/menu-option.compon
 import { CarsCardsComponent } from './components/cars-cards/cars-cards.component';
 import { SwiperModule } from 'swiper/angular';
 import { CarsCarouselComponent } from './components/cars-carousel/cars-carousel.component';
+import { CheckCarroceriaComponent } from './components/check-carroceria/check-carroceria.component';
+import { CheckMotorComponent } from './components/check-motor/check-motor.component';
+import { CheckLugaresComponent } from './components/check-lugares/check-lugares.component';
+import { FilterComponent } from './components/filter/filter.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +23,10 @@ import { CarsCarouselComponent } from './components/cars-carousel/cars-carousel.
     MenuOptionComponent,
     CarsCarouselComponent,
     CarsCardsComponent,
+    CheckCarroceriaComponent,
+    CheckMotorComponent,
+    CheckLugaresComponent,
+    FilterComponent,
   ],
   exports: [
     ButtonComponent,
@@ -26,7 +35,11 @@ import { CarsCarouselComponent } from './components/cars-carousel/cars-carousel.
     MenuOptionComponent,
     CarsCarouselComponent,
     CarsCardsComponent,
+    CheckCarroceriaComponent,
+    CheckMotorComponent,
+    CheckLugaresComponent,
+    FilterComponent,
   ],
-  imports: [CommonModule, SwiperModule, HttpClientModule],
+  imports: [CommonModule, SwiperModule, HttpClientModule, FormsModule],
 })
 export class SharedModule {}
