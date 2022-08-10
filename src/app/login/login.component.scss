@@ -4,7 +4,12 @@
   background-color: #1d2b3a;
 
   .header {
-    height: 45vh;
+    height: 25vh;
+    display: flex;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10vh 0;
   }
 
   .content {
