@@ -19,7 +19,7 @@
     </div>
     <h3>Últimas reservas</h3>
     <div>
-      <app-cars-carousel></app-cars-carousel>
+      <app-cars-carousel [cars]="cars"></app-cars-carousel>
     </div>
     <app-button
       [color]="'#1b2c39'"
@@ -32,4 +32,4 @@
   </div>
 </div>
 
-<app-filter (filters)="aplicarFiltro($event)" [display]="filterDisplay"></app-filter>
+<app-filter (filters)="aplicarFiltro($event)" (changeDisplay)="hideFilters($event)" [display]="filterDisplay"></app-filter>

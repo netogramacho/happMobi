@@ -1,6 +1,6 @@
 <div class="carousel">
   <swiper class="swiper" [config]="config">
-    <ng-template swiperSlide *ngFor="let car of cars | async">
+    <ng-template swiperSlide *ngFor="let car of cars">
       <app-cars-cards [car]="car"></app-cars-cards>
     </ng-template>
   </swiper>

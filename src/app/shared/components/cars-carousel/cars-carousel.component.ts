@@ -1,7 +1,7 @@
 import { Observable } from 'rxjs';
 import { CarsService } from './../../services/cars.service';
 import { Car } from './../../interfaces/cars';
-import { Component, Injectable, Input, OnInit } from '@angular/core';
+import { Component, Injectable, Input, OnInit, OnChanges } from '@angular/core';
 import { SwiperOptions } from 'swiper';
 
 @Component({
@@ -11,12 +11,12 @@ import { SwiperOptions } from 'swiper';
 })
 @Injectable()
 export class CarsCarouselComponent implements OnInit {
-  @Input() public cars?: Observable<Car[]>;
+  @Input() public cars!: Car[] | null;
 
   public config: SwiperOptions;
 
 
-  constructor(private carsService: CarsService) {
+  constructor() {
     this.config = {
       slidesPerView: 2,
       loop: false,
@@ -26,10 +26,10 @@ export class CarsCarouselComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getCars();
   }
 
-  getCars() {
-    this.cars = this.carsService.getCars();
+  ngOnChanges():void {
+
   }
+
 }

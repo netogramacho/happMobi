@@ -8,6 +8,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class FilterComponent implements OnInit {
 
   @Output() public filters = new EventEmitter<any>();
+  @Output() public changeDisplay = new EventEmitter<string>();
   @Input() public display?: string;
 
   public carrocerias: string[];
@@ -87,7 +88,7 @@ export class FilterComponent implements OnInit {
       carrocerias: this.filterCarrocerias,
     }
 
-    this.display = 'none';
+    this.changeDisplay.emit('none');
     this.filters.emit(objEmit);
   }
 }

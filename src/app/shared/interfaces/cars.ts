@@ -1,8 +1,8 @@
 export interface Car {
-  engine: number,
+  engine: string,
   image: string,
   name: string,
-  size: number,
+  size: string,
   type: string,
-  year: number,
+  year: string,
 }
