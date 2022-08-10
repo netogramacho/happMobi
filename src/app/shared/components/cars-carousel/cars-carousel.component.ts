@@ -12,6 +12,7 @@ import { SwiperOptions } from 'swiper';
 @Injectable()
 export class CarsCarouselComponent implements OnInit {
   @Input() public cars!: Car[] | null;
+  @Input() public searchText!: string;
 
   public config: SwiperOptions;
 

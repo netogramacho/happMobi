@@ -14,6 +14,8 @@ import { CheckCarroceriaComponent } from './components/check-carroceria/check-ca
 import { CheckMotorComponent } from './components/check-motor/check-motor.component';
 import { CheckLugaresComponent } from './components/check-lugares/check-lugares.component';
 import { FilterComponent } from './components/filter/filter.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+
 
 @NgModule({
   declarations: [
@@ -40,6 +42,6 @@ import { FilterComponent } from './components/filter/filter.component';
     CheckLugaresComponent,
     FilterComponent,
   ],
-  imports: [CommonModule, SwiperModule, HttpClientModule, FormsModule],
+  imports: [CommonModule, SwiperModule, HttpClientModule, FormsModule, Ng2SearchPipeModule],
 })
 export class SharedModule {}

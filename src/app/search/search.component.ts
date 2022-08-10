@@ -10,6 +10,7 @@ import { Car } from '../shared/interfaces/cars';
 })
 export class SearchComponent implements OnInit {
   public cars!: Car[];
+  public searchText!:string;
 
   public filterDisplay: string;
   constructor(private carsService: CarsService) {

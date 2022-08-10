@@ -11,7 +11,7 @@
   <div class="body">
     <div class="body__buttons">
       <div class="body__buttons__search">
-        <img src="assets/images/search-icon.png" /> Buscar carro
+        <input type="text" placeholder="&#61442; Buscar carro" [(ngModel)]="searchText">
       </div>
       <div class="body__buttons__filter" (click)="openFilters()">
         <img src="assets/images/filter-icon.png" /> Filtrar
@@ -19,7 +19,7 @@
     </div>
     <h3>Últimas reservas</h3>
     <div>
-      <app-cars-carousel [cars]="cars"></app-cars-carousel>
+      <app-cars-carousel [cars]="cars" [searchText]="searchText"></app-cars-carousel>
     </div>
     <app-button
       [color]="'#1b2c39'"
